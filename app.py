@@ -17,5 +17,5 @@ def predict():
     return render_template("index.html",prediction_text = "your Salary is "+str(pre_sal[0]))
     
     
-    
-app.run(port=5005,debug=True)
+if __name__=="__main__":
+    app.run(port=5001,debug=True)
